@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(../images/e6a334cddacfd4112de84da07cdd3376.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
+.rosa{
+	background-color: #FFE3F3;
+	width: 100%;
+	height:1000px;
+}
+
+header{
+	background-image:url("../img/header.jpg");
+	background-size: cover; 
+	background-repeat: no-repeat;
+	height: 550px;
+}
+nav.navbar{background-color: transparent; 
+			border: 0; 
+			opacity: 0.9;
+} /*Fondo del nav bar*/ 	
+ .navbar-default .navbar-brand { color: white;	
+ 		 font-size: 100%;
+  }/*Color del titulo*/
+  .navbar-default .navbar-nav > li > a { 
+  	color: #D7DBDD; 
+  } /*Color de links*/ 
