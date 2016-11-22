@@ -190,6 +190,9 @@ body{
 	.texto{
 		font-size: 15px;
 	}
+	.contacts{
+		width: 50%;
+	}
 
 }
 .sidenav {
