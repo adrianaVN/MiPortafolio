@@ -22,9 +22,9 @@
 
 $(window).scroll(function() {
 
-    if ($(this).scrollTop()>100)
+    if ($(this).scrollTop() >250)
      {
-        $('.olas').fadeOut();
+        $('.olas').hide();
      }
     else
      {
@@ -45,7 +45,15 @@ $(window).scroll(function() {
 
  	});*/
  });
+/*$(window).scroll(function() {
 
+    if ($(window).scrollTop() > 100) {
+        $('.olas').addClass('sticky');
+    } else {
+        $('.olas').removeClass('sticky');
+    }
+});
 
+*/
 
  

@@ -17,20 +17,26 @@
 	<nav class="navbar-fixed-top">
 			<div id="mySidenav" class="sidenav">
 			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			  <a href="#"><span class="text-white">Sobre Mi</span></a>
-			  <a href="#"><span class="text-white">Skills</span></a>
-			  <a href="#"><span class="text-white">Mis proyectos</span></a>
-			  <a href="#"><span class="text-white">Contacto</span></a>
+			  <a href="#inicio"><span class="text-white">inicio</span></a>
+			  <a href="#sobreMi"><span class="text-white">Sobre Mi</span></a>
+			  <a href="#skills"><span class="text-white">Skills</span></a>
+			  <a href="#misProyectos"><span class="text-white">Mis proyectos</span></a>
+			  <a href="#contacto"><span class="text-white">Contacto</span></a>
 			</div>
 			<div id="main">
 			 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;<b> open</b></span>
 			</div>
 		</nav>
 		<header><!-- nube y olas (falta quitarle a la ola el sobrante de la transparencia para que se ajuste bien) -->
-			
-			<div class="row">
+			<a name="inicio"></a>
+			<div class="row mt-2">
 				<div class="col-lg-12">
-					<img src="images/adri.png" alt="" class="img-responsive nube">
+					<div class="col-lg-6">
+						<img src="images/adri.png" alt="" class="img-responsive nube mt-5">
+					</div>
+					<div class="col-lg-6 hidden-xs">
+						<img src="images/Goéland_MM.png" alt="" class="img-responsive mt-5">
+					</div>
 				</div>
 			<div class="col-lg-12 hidden-xs">
 				<img src="images/Boats-Paper-Boat-121l.png" alt="" class="olas">
@@ -38,11 +44,12 @@
 			</div>
 		</header><!-- fin nube y olas -->
 		<section class="rosa"><!--  seccion sobre mi  -->
+
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="col-lg-12">
-							<h1 class="text-center mt-10 text-bl">Sobre Mi <img src="images/large.png" alt="" id="sirena"></h1>	
+							<h1 class="text-center mt-10 text-bl">Sobre Mi <img src="images/large.png" alt="" id="sirena"><a name="sobreMi"></a></h1>			
 							<hr>	
 						</div>
 						<div class="col-lg-5 text-center mt-10">
@@ -68,14 +75,14 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="col-lg-12">
-							<h1 class="text-center mt-5 text-bl"><b>Skills</b> <img src="images/large.png" alt="" id="sirena"></h1>	
+							<h1 class="text-center mt-5 text-bl"><b>Skills</b> <img src="images/large.png" alt="" id="sirena"><a name="skills"></a></h1>	
 							<hr>
 						</div>
 				</div>
 			</div><!-- titulo -->
 			<div class="contain">
 				<div class="content">
-			    	<div class="col-lg-6">
+			    	<div class="col-lg-6 col-xs-6 col-sm-6">
 			    		<h3 class="text-center text-bl "><b>Habilidades tecnicas</b></h3>
 				        <ul id="skill">
 				        <li><span class="expand html5 text-white"><b>HTML 5</b></span></li>
@@ -86,15 +93,15 @@
 			        </ul>
 			        </div>
 			    </div>
-			    <div class="col-lg-6">
+			    <div class="col-lg-6 col-xs-6 col-sm-6">
 			    	<h3 class="text-center text-bl "><b>Habilidades blandas</b></h3>
 			    	<ul>
-			    		<li><span class="glyphicon glyphicon-cloud text-white mt-5 ml-7"></span></li>
-			    		<li><span class="glyphicon glyphicon-cloud text-white mt-5 ml-7"></span></li>
-			    		<li><span class="glyphicon glyphicon-cloud text-white mt-5 ml-7"></span></li>
-			    		<li><span class="glyphicon glyphicon-cloud text-white mt-5 ml-7"></span></li>
-			    		<li><span class="glyphicon glyphicon-cloud text-white mt-5 ml-7"></span></li>
-			    		<li><span class="glyphicon glyphicon-cloud text-white mt-5 ml-7"></span></li>
+			    		<li><span class="glyphicon glyphicon-cloud text-white mt-5 ml-7 texto"> Adaptabilidad.</span></li>
+			    		<li><span class="glyphicon glyphicon-cloud text-white mt-5 ml-7 texto"> Trabajo en equipo.</span></li>
+			    		<li><span class="glyphicon glyphicon-cloud text-white mt-5 ml-7 texto"> Comunicacion.</span></li>
+			    		<li><span class="glyphicon glyphicon-cloud text-white mt-5 ml-7 texto"></span></li>
+			    		<li><span class="glyphicon glyphicon-cloud text-white mt-5 ml-7 texto"></span></li>
+			    		<li><span class="glyphicon glyphicon-cloud text-white mt-5 ml-7 texto"></span></li>
 			    	</ul>
 			    </div>
 			    </div>
@@ -106,7 +113,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h1 class="text-center mt-5 text-bl"><b> Mis Proyectos </b> <img src="images/large.png" alt="" id="sirena"></h1>	
+						<h1 class="text-center mt-5 text-bl"><b> Mis Proyectos </b> <img src="images/large.png" alt="" id="sirena"><a name="misProyectos"></a></h1>	
 						<hr>
 						<!-- <img src="images/rope.png" alt="" class="img-responsive"> -->
 					</div>
@@ -138,7 +145,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h1 class="text-center mt-10 text-bl"><b>Contáctame</b><img src="images/large.png" alt="" id="sirena"></h1>	
+						<h1 class="text-center mt-10 text-bl"><b>Contáctame</b><img src="images/large.png" alt="" id="sirena"><a name="contacto"></a></h1>	
 						<hr>	
 					</div>
 				</div>
@@ -146,20 +153,20 @@
 					<div class="col-lg-12 mt-5">
 						<div class="col-lg-3 col-xs-3 text-center">
 							<b><img src="images/commercial-at.png" alt="" class="contacts"></b>
-							<h4 class="texto"><b>venegasadriana78@gmail.com</b></h4>
+							<h4 class="texto2"><b>venegasadriana78@gmail.com</b></h4>
 						</div>
 						<div class="col-lg-3 col-xs-3 text-center">
 							<img src="images/smartphone-drawed.png" alt="" class="contacts">
-							<h4 class="mt-5 texto"><b>55-38-26-91-87</b></h4>
+							<h4 class="mt-5 texto2"><b>55-38-26-91-87</b></h4>
 						</div>
 						<div class="col-lg-3 col-xs-3 text-center">
 							<a href="https://www.linkedin.com/in/adriana-venegas-358582124?trk=nav_responsive_tab_profile" target="_blak"><img src="images/linkedin-draw-logo.png" alt="" class="contacts">
-								<h4 class="texto text-bl"><b>www.linkedin.com/in/adriana-venegas</b></h4>
+								<h4 class="texto2 text-bl"><b>www.linkedin.com/in/adriana-venegas</b></h4>
 							</a>
 						</div>
 						<div class="col-lg-3 col-xs-3 text-center">
 							<a href="https://github.com/adrianaVN" target="_blank"><img src="images/github-draw-logo.png" alt="" class="contacts">
-							<h4 class="texto text-bl"><b>github.com/adrianaVN</b></h4>
+							<h4 class="texto2 text-bl"><b>github.com/adrianaVN</b></h4>
 							</a>
 						</div>
 					</div>
@@ -170,10 +177,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<div class="col-lg-10 mt-1">
+						<div class="col-lg-10 col-xs-10 mt-1">
 							<p class="text-white">Adriana Venegas © </p>
 						</div>
-						<div class="col-lg-2 mt-1">
+						<div class="col-lg-2 col-xs-2 mt-1">
 							<p class="text-white">Laboratoria 2016</p>
 						</div>
 					</div>
