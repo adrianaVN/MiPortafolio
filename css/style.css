@@ -1,18 +1,23 @@
 *{
-	/* margin: 0;
-	padding: 0;  */
 	font-family: 'Tillana', cursive;
 }
 body{
+	margin: 0;
+	padding: 0;
 	background-image: url(../images/Boats-Paper-Boat-l.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100%;
 	background-attachment: fixed;
+	margin: auto;
+}
+ul li{
+	text-decoration: none;
+	list-style: none;
 }
 .rosa{
 	/* background-color:rgba(187,203,218,0.84);  */
 	background-image: url(../images/4-light-samless-denim.jpg);
-	width: 100%;
+	background-size: cover;
 	height:850px;
 	margin-top: 50%;
 	opacity: 0.93;
@@ -20,10 +25,9 @@ body{
 
 .azul{
 	/* background-color: rgba(45,128,201, 0.84) */
-	background-image: url(../images/blue-wrinkled-paper-texture.jpg);
+	background-image: url(../images/1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 100%;
 	height:700px;
 	margin-top: 50%;
 	opacity: 0.8;
@@ -36,20 +40,7 @@ body{
 .olas{
 	width: 100%;
 }
-/* .rope{
-	background-image: url(../images/rope.png);
-	background-size: 100%;
-	height: 500px;
-	margin-bottom: 4%;
-} */
-/* .olas{
-	background-image: url(../images/artsfon.com-10913.jpg);
-	background-size: cover;
-	height: 700px;
-	background-repeat:no-repeat;
-	margin-top: 50%;
-	opacity: 0.95;
-} */
+
 .mt-10{
 	margin-top: 8%;
 }
@@ -68,6 +59,15 @@ body{
 	margin-bottom: 5%;
 	margin-left: 1%;
 	
+}
+.text-white{
+	color: white;
+}
+.glyphicon-cloud{
+	font-size: 200%;
+}
+.ml-7{
+	margin-left: 20%;
 }
 /* .cuadro{
 	box-shadow: 10px 10px 5px #888888;
@@ -113,7 +113,7 @@ body{
 	background: white;
 	display: inline;
 	float: left;
-	margin: 5% 15px 30px;
+	margin: 20px 15px 30px;
 	padding: 10px 10px 25px;
 	text-align: center;
 	text-decoration: none;
@@ -128,7 +128,7 @@ body{
 }
 .polaroid-images div:after {
 	color: #333;
-	font-size: 20px;
+	font-size: 20px;ñ
 	content: attr(title);
 	position: relative;
 	top:15px;
@@ -168,9 +168,6 @@ body{
 	-moz-transform: scale(1.2);
         transform: scale(1.2);
 	z-index:10;
-	/* -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
-	-moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
-	        box-shadow: 0 10px 20px rgba(0,0,0,.7); */
 }
 @media only screen and (max-width: 500px) {
     .polaroid-images img {
@@ -201,6 +198,15 @@ body{
 	.contacts{
 		width: 60%;
 	}
+	.azul{
+		margin-top: 0;
+	}
+	.brick{
+		margin-top: 0;
+	}
+	.contacto{
+		margin-top: 0;
+	}
 
 }
 .sidenav {
@@ -221,14 +227,14 @@ body{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #030303;
+    color: #FFE505;
     display: block;
     transition: 0.3s
 
 }
 
 .sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
+    color: #FFE505;
 }
 
 .sidenav .closebtn {
@@ -248,111 +254,13 @@ body{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-/* #progressBar {
-    width: 20px;
-    height: 22px;
-    border: 1px solid #111;
-    background-color: #292929;
-}
-#progressBar div {
-	width: 50%;
-    height: 100%;
-    color: #fff;
-    text-align: right;
-    line-height: 22px; same as #progressBar height if we want text middle aligned
-    width: 0;
-    background-color: #0099ff;
-}
 
-.skillbar {
-	position:relative;
-	display:block;
-	margin-bottom:15px;
-	width:100%;
-	background:#eee;
-	height:35px;
-	border-radius:3px;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	-webkit-transition:0.4s linear;
-	-moz-transition:0.4s linear;
-	-ms-transition:0.4s linear;
-	-o-transition:0.4s linear;
-	transition:0.4s linear;
-	-webkit-transition-property:width, background-color;
-	-moz-transition-property:width, background-color;
-	-ms-transition-property:width, background-color;
-	-o-transition-property:width, background-color;
-	transition-property:width, background-color;
-}
-
-.skillbar-title {
-	position:absolute;
-	top:0;
-	left:0;
-width:110px;
-	font-weight:bold;
-	font-size:13px;
-	color:#ffffff;
-	background:#6adcfa;
-	-webkit-border-top-left-radius:3px;
-	-webkit-border-bottom-left-radius:4px;
-	-moz-border-radius-topleft:3px;
-	-moz-border-radius-bottomleft:3px;
-	border-top-left-radius:3px;
-	border-bottom-left-radius:3px;
-}
-
-.skillbar-title span {
-	display:block;
-	background:rgba(0, 0, 0, 0.1);
-	padding:0 20px;
-	height:35px;
-	line-height:35px;
-	-webkit-border-top-left-radius:3px;
-	-webkit-border-bottom-left-radius:3px;
-	-moz-border-radius-topleft:3px;
-	-moz-border-radius-bottomleft:3px;
-	border-top-left-radius:3px;
-	border-bottom-left-radius:3px;
-}
-
-.skillbar-bar {
-	height:35px;
-	width:0px;
-	background:#6adcfa;
-	border-radius:3px;
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-}
-
-.skill-bar-percent {
-	position:absolute;
-	right:10px;
-	top:0;
-	font-size:11px;
-	height:35px;
-	line-height:35px;
-	color:#ffffff;
-	color:rgba(0, 0, 0, 0.4);
-} */
 .contain{
 	width: 100%;
 	margin: 0 auto; 
 	overflow: hidden;
 }
 
-/* .content{
-	width: 100%;
-	height: 500px;
-	margin:0;
-	position:relative;
-	float:left;
-	font-size:12px;
-	line-height:10em;
-	padding:30px 0 30px;
-} */
-/* .col { width:280px; } */
 
 #skill { 
 	list-style:none; 
@@ -383,20 +291,30 @@ width:110px;
 	box-shadow:0px 0px 10px 1px rgba(35,198,255,0.9);
 }
 
-.html5       { width:70%;  -moz-animation:html5 2s ease-out;       -webkit-animation:html5 2s ease-out;       }
-.css3        { width:85%;  -moz-animation:css3 2s ease-out;        -webkit-animation:css3 2s ease-out;        }
-.jquery      { width:50%;  -moz-animation:jquery 2s ease-out;      -webkit-animation:jquery 2s ease-out;      }
-.photoshop   { width:10%;  -moz-animation:photoshop 2s ease-out;   -webkit-animation:photoshop 2s ease-out;   }
-.dreamweaver { width:85%; -moz-animation:dreamweaver 2s ease-out; -webkit-animation:dreamweaver 2s ease-out; }
+.html5       { 	width:85%;  -moz-animation:html5 2s ease-out; 
+      			-webkit-animation:html5 2s ease-out;       
+      		}
+.css3        { width:85%;  -moz-animation:css3 2s ease-out;
+				-webkit-animation:css3 2s ease-out;       
+				 }
+.jquery      { width:50%;  -moz-animation:jquery 2s ease-out;
+			  -webkit-animation:jquery 2s ease-out;     
+			   }
+.photoshop   { width:80%;  -moz-animation:photoshop 2s ease-out;   
+				-webkit-animation:photoshop 2s ease-out;   
+			}
+.dreamweaver { width:60%; -moz-animation:dreamweaver 2s ease-out; 
+				-webkit-animation:dreamweaver 2s ease-out; 
+			}
 
-@-moz-keyframes html5       { 0%  { width:0px;} 100%{ width:70%;}  }
-@-moz-keyframes css3        { 0%  { width:0px;} 100%{ width:90%;}  }
-@-moz-keyframes jquery      { 0%  { width:0px;} 100%{ width:50%;}  }
-@-moz-keyframes photoshop   { 0%  { width:0px;} 100%{ width:10%;}  }
-@-moz-keyframes dreamweaver { 0%  { width:0px;} 100%{ width:100%;} }
+/* @-moz-keyframes html5       { 0%  { width:0px;} 40%{ width:70%;}  }
+@-moz-keyframes css3        { 0%  { width:0px;} 40%{ width:90%;}  }
+@-moz-keyframes jquery      { 0%  { width:0px;} 40%{ width:50%;}  }
+@-moz-keyframes photoshop   { 0%  { width:0px;} 40%{ width:10%;}  }
+@-moz-keyframes dreamweaver { 0%  { width:0px;} 40%{ width:90%;} } */
 
-@-webkit-keyframes html5       { 0%  { width:0px;} 100%{ width:70%;}  }
-@-webkit-keyframes css3        { 0%  { width:0px;} 100%{ width:90%;}  }
-@-webkit-keyframes jquery      { 0%  { width:0px;} 100%{ width:50%;}  }
-@-webkit-keyframes photoshop   { 0%  { width:0px;} 100%{ width:10%;}  }
-@-webkit-keyframes dreamweaver { 0%  { width:0px;} 100%{ width:100%;} }
+@-webkit-keyframes html5       { 0%  { width:0px;} 40%{ width:60%;}  }
+@-webkit-keyframes css3        { 0%  { width:0px;} 40%{ width:60%;}  }
+@-webkit-keyframes jquery      { 0%  { width:0px;} 40%{ width:40%;}  }
+@-webkit-keyframes photoshop   { 0%  { width:0px;} 40%{ width:10%;}  }
+@-webkit-keyframes dreamweaver { 0%  { width:0px;} 40%{ width:60%;} }
