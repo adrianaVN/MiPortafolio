@@ -11,7 +11,7 @@ body{
 	padding: 0;
 	background-image: url(../images/Boats-Paper-Boat-l.jpg);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-attachment: fixed;
 	margin: auto;
 	overflow-x: hidden;
@@ -232,10 +232,13 @@ ul li{
 		margin-top: 0;
 	}
 	.rosa{
-		margin-top: 10%;
+		margin-top: 12%;
 	}
 	.texto2{
 		font-size: 30%;
+	}
+	body{
+		background-size: 100%;
 	}
 
 }
