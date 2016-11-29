@@ -37,23 +37,7 @@ $(window).scroll(function() {
  		jQuery(this).find('.skillbar-bar').animate({ width:jQuery(this).attr('data-percent') },6000);
  		 }); 
 
- 	/*$(document).scroll(function(){
-
- 		$('.olas').hide();
-
- 		var scrollTop = $(this).scrollTop();
-
- 	});*/
  });
-/*$(window).scroll(function() {
-
-    if ($(window).scrollTop() > 100) {
-        $('.olas').addClass('sticky');
-    } else {
-        $('.olas').removeClass('sticky');
-    }
-});
-
-*/
+ 
 
  
