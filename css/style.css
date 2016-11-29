@@ -25,7 +25,7 @@ ul li{
 	background-image: url(../images/4-light-samless-denim.jpg);
 	background-size: cover;
 	height:850px;
-	margin-top: 50%;
+	margin-top: 40%;
 	opacity: 0.93;
 }
 
@@ -35,7 +35,7 @@ ul li{
 	background-repeat: no-repeat;
 	background-size: cover;
 	height:750px;
-	margin-top: 50%;
+	margin-top: 40%;
 	opacity: 0.8;
 }
 .nube{
@@ -44,10 +44,7 @@ ul li{
 	margin-left: 5%;
 
 }
-.contacts{
-	/* width: 60%;
-	height: 120px; */
-} 
+ 
 .olas{
 	width: 100%;
 	margin-top: -15%;
@@ -71,6 +68,9 @@ ul li{
 	margin-bottom: 5%;
 	margin-left: 1%;
 	
+}
+.mt-3{
+	margin-top: 3%;
 }
 .text-white{
 	color: white;
@@ -107,7 +107,7 @@ ul li{
 	opacity: 0.87;
 	background-size: cover;
 	height:650px;
-	margin-top: 50%;
+	margin-top: 40%;
 }
 .contacts:hover{
 	/* background-image: url(../images/a06c35b5e12ec74fc59bfaaa211b2f1d.jpg);
@@ -235,7 +235,7 @@ ul li{
 		margin-top: 10%;
 	}
 	.texto2{
-		font-size: 40%;
+		font-size: 30%;
 	}
 
 }
@@ -337,12 +337,6 @@ ul li{
 				-webkit-animation:dreamweaver 2s ease-out; 
 			}
 
-/* @-moz-keyframes html5       { 0%  { width:0px;} 40%{ width:70%;}  }
-@-moz-keyframes css3        { 0%  { width:0px;} 40%{ width:90%;}  }
-@-moz-keyframes jquery      { 0%  { width:0px;} 40%{ width:50%;}  }
-@-moz-keyframes photoshop   { 0%  { width:0px;} 40%{ width:10%;}  }
-@-moz-keyframes dreamweaver { 0%  { width:0px;} 40%{ width:90%;} } */
-
 @-webkit-keyframes html5       { 0%  { width:0px;} 40%{ width:60%;}  }
 @-webkit-keyframes css3        { 0%  { width:0px;} 40%{ width:60%;}  }
 @-webkit-keyframes jquery      { 0%  { width:0px;} 40%{ width:40%;}  }
@@ -352,32 +346,11 @@ ul li{
 
 .cloudy {
 	animation: cloudy 1.7s ease-in-out infinite;
-	/* background: #FFFFFF;
-	border-radius: 50%; */
-	/* box-shadow: 
-		#FFFFFF 65px -15px 0 -5px, 
-		#FFFFFF 25px -25px, 
-		#FFFFFF 30px 10px, 
-		#FFFFFF 60px 15px 0 -10px, 
-		#FFFFFF 85px 5px 0 -5px; */
-	/* height: 50px;
-	width: 50px;  */
-	/* margin-left: -60px; */
-	/* position: absolute; */
-	/* left: 255px;
-	 top: 70px; */ 
+	
 }
 .cloudy:after {
 	animation: cloudy_shadow 1.7s ease-in-out infinite;
-	/* background: #000000;
-	border-radius: 50%;
-	content: '';
-	height: 15px;
-	width: 200px;
-	opacity: 0.2;
-	position: absolute;
-	left: 15%; 
-	bottom: -60px; */
+	
   transform: scale(.8);
 }
 @keyframes cloudy {

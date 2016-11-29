@@ -1,15 +1,3 @@
-/*$(document).ready(function(){
-    $('.nube').mouseenter(function(){
-        $(this).fadeTo('fast','0.25');
-        });
-    /*$('.nube').mouseleave(function(){
-        $(this).fadeTo('fast', '1');
-      });
-});*/
-
-
-
-
 
 	function openNav() {
 	    document.getElementById("mySidenav").style.width = "250px";
