@@ -11,25 +11,19 @@
 		<!-- <link rel="stylesheet" href="css/font-awesome.css"> -->
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"> -->
 	</head>
 	<body>
-	<nav class="navbar-fixed-top">
-			<div id="mySidenav" class="sidenav">
-			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			  <a href="#inicio"><span class="text-white">inicio</span></a>
-			  <a href="#sobreMi"><span class="text-white">Sobre Mi</span></a>
-			  <a href="#skills"><span class="text-white">Skills</span></a>
-			  <a href="#misProyectos"><span class="text-white">Mis proyectos</span></a>
-			  <a href="#contacto"><span class="text-white">Contacto</span></a>
-			</div>
-			<div id="main">
-			 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;<b> open</b></span>
-			</div>
-		</nav>
+		 <div class="parent2 hidden-xs">
+			  <div class="test1"><a class="fa fa-user fa-2x" href="#sobreMi"></a></div>
+			  <div class="test2"><a class="fa fa-graduation-cap fa-2x" href="#skills"></a></div>
+			  <div class="test3"><a class="fa fa-code fa-2x" href="#misProyectos"></a></div>
+			  <div class="test4"><a class="fa fa-envelope-o fa-2x" href="#contacto"></a></div>
+			  <div class="mask2"><a class="fa fa-bars fa-3x" ></a></div>
+		</div>
 		<header><!-- nube y olas (falta quitarle a la ola el sobrante de la transparencia para que se ajuste bien) -->
-			<a name="inicio"></a>
-			<div class="row mt-2">
+			<div class="row ">
 				<div class="col-lg-12">
 					<div class="col-lg-6 cloudy mt-3">
 						<img src="images/adri.png" alt="" class="img-responsive nube mt-5">
@@ -43,13 +37,13 @@
 			</div>
 			</div>
 		</header><!-- fin nube y olas -->
+			
 		<section class="rosa"><!--  seccion sobre mi  -->
-
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="col-lg-12">
-							<h1 class="text-center mt-10 text-bl">Sobre Mi <img src="images/large.png" alt="" id="sirena"><a name="sobreMi"></a></h1>			
+							<h1 class="text-center mt-10 text-bl">Sobre Mi <img src="images/large.png" alt="" id="sirena"></h1><a name="sobreM"></a>			
 							<hr>	
 						</div>
 						<div class="col-lg-5 text-center mt-10">
@@ -61,7 +55,7 @@
 								<div class="col-lg-12">
 									<h6 class="text-center texto text-bl">Técnico en computación/Front-End Web Developer.</h6>
 									<p class="text-center texto text-bl">
-									Siempre con una sonrisa en el rostro y la determinación necesaria para terminar todo lo que comienzo: apasionada de la lectura, la gastronomía y los conciertos, en mis tiempos libres me dedico a rescatar perros de la calle y me encargo de buscarles un buen hogar; me encanta conocer gente y aprender sobre diferentes culturas; gracias a laboratoria el desarrollo web se ha convertido en una de mi pasiones; la perseverancia y las ganas de aprender son mis mejores cualidades.
+									Siempre con una sonrisa en el rostro y la determinación necesaria para terminar todo lo que comienzo: apasionada de la lectura, la gastronomía y los conciertos, en mis tiempos libres me dedico a rescatar perros de la calle y me encargo de buscarles un buen hogar; me encanta conocer gente y aprender sobre diferentes culturas; gracias a laboratoria el desarrollo web se ha convertido en una de mis pasiones; la perseverancia y las ganas de aprender son mis mejores cualidades.
 									</p>
 								</div>
 							</div>
@@ -83,13 +77,13 @@
 			<div class="contain">
 				<div class="content">
 			    	<div class="col-lg-6 col-xs-12 col-sm-6">
-			    		<h3 class="text-center text-bl "><b>Habilidades técnicas.</b></h3>
+			    		<h3 class="text-center text-bl"><b>Habilidades técnicas.</b></h3>
 				        <ul id="skill">
-				        <li><span class="expand html5 text-white"><b>HTML 5</b></span></li>
-				        <li><span class="expand css3 text-white"><b>CSS 3</b></span></li>
-				        <li><span class="expand jquery text-white"><b>jQuery</b></span></li>
-				        <li><span class="expand photoshop text-white"><b>Bootstrap</b></span></li>
-				        <li><span class="expand dreamweaver text-white"><b>Javascript</b></span></li>
+				        <li><span class="expand html5 text-white">HTML 5</span><span class="pull-right text-white">intermedio</span></li>
+				        <li><span class="expand css3 text-white ">CSS 3</span><span class="pull-right text-white">intermedio</span></li>
+				        <li><span class="expand jquery text-white">jQuery</span><span class="pull-right text-white">intermedio</span></li>
+				        <li ><span class="expand photoshop text-white ">Bootstrap</span><span class="pull-right text-white">intermedio</span></li>
+				        <li><span class="expand dreamweaver text-white "><b>Javascript</b></span><span class="pull-right text-white">intermedio</span></li>
 			        </ul>
 			        </div>
 			    </div>
@@ -108,7 +102,7 @@
 			</div>
 			<div class="row">
 					<div class="col-lg-12 text-center">
-						<span class="text-white texto">Conoce mas de mi, checa mi Currículum</span><a href="./documents/CURRICULUMADRIANA (2).pdf" download="AdrianaVenegasCurriculum" class="text-white texto"> aqui.</a>
+						<span class="text-white texto">Conoce mas de mi, checa mi Currículum</span><a href="./documents/CURRICULUMADRIANA (2).pdf" download="AdrianaVenegasCurriculum" class="text-white texto text-c"> aqui.</a>
 					</div>
 				</div>
 
@@ -123,8 +117,8 @@
 						<!-- <img src="images/rope.png" alt="" class="img-responsive"> -->
 					</div>
 					<div class="row">
-						<div class="col-lg-12 col-xs-12 rope">
-							<div class="polaroid-images col-xs-12">
+						<div class="col-lg-12 col-xs-12 mt-3">
+							<!-- <div class="polaroid-images col-xs-12">
 								<div class="col-lg-3 col-xs-3 polaroid-images mt-5">
 									<a href="https://adrianavn.github.io/26_sprint1/." target="_blank" class="texto"><img src="images/sprint1.JPG" alt="" class="proyectos">sprint1</a>
 								</div>
@@ -138,6 +132,50 @@
 									<a href="https://adrianavn.github.io/28_coder/." target="_blank" class="texto"><img src="images/coder.JPG" alt="" class="proyectos">coder</a>
 								</div>
 								
+							</div> -->
+							<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 cont">
+							    <div class="hovereffect">
+							        <img class="img-responsive" src="images/sprint1.JPG" alt="" >
+							            <div class="overlay">
+							                <h2>Sprint 1</h2>
+											<p>
+												<a href="https://adrianavn.github.io/26_sprint1/." target="_blank" class="text-c">CLICK HERE</a>
+											</p> 
+							            </div>
+							    </div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 cont">
+							    <div class="hovereffect">
+							        <img class="img-responsive" src="images/bussines.JPG" alt="">
+							            <div class="overlay">
+							                <h2>Business</h2>
+											<p>
+												<a href="https://adrianavn.github.io/30_business/" target="_blank" class="text-c">CLICK HERE</a>
+											</p> 
+							            </div>
+							    </div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 cont">
+							    <div class="hovereffect">
+							        <img class="img-responsive" src="images/keanetheme.JPG" alt="">
+							            <div class="overlay">
+							                <h2>Keane Theme</h2>
+											<p>
+												<a href="https://adrianavn.github.io/33_keaneTheme/." target="_blank" class="text-c">CLICK HERE</a>
+											</p> 
+							            </div>
+							    </div>
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 cont">
+							    <div class="hovereffect">
+							        <img class="img-responsive" src="images/coder.JPG" alt="">
+							            <div class="overlay">
+							                <h2>Coder</h2>
+											<p>
+												<a href="https://adrianavn.github.io/28_coder/." target="_blank" class="text-c">CLICK HERE</a>
+											</p> 
+							            </div>
+							    </div>
 							</div>
 						</div>
 					</div>
@@ -158,20 +196,20 @@
 					<div class="col-lg-12 mt-5">
 						<div class="col-lg-3 col-xs-3 text-center">
 							<b><img src="images/commercial-at.png" alt="" class="contacts"></b>
-							<h4 class="texto2 text-c"><b>venegasadriana78@gmail.com</b></h4>
+							<h4 class="texto2"><b>venegasadriana78@gmail.com</b></h4>
 						</div>
 						<div class="col-lg-3 col-xs-3 text-center">
 							<img src="images/smartphone-drawed.png" alt="" class="contacts">
-							<h4 class="mt-5 texto2 text-c"><b>55-38-26-91-87</b></h4>
+							<h4 class="mt-5 texto2"><b>55-38-26-91-87</b></h4>
 						</div>
 						<div class="col-lg-3 col-xs-3 text-center">
 							<a href="https://www.linkedin.com/in/adriana-venegas-358582124?trk=nav_responsive_tab_profile" target="_blak"><img src="images/linkedin-draw-logo.png" alt="" class="contacts">
-								<h4 class="texto2 text-bl text-c"><b>www.linkedin.com/in/adriana-venegas</b></h4>
+								<h4 class="texto2 text-bl"><b>www.linkedin.com/in/adriana-venegas</b></h4>
 							</a>
 						</div>
 						<div class="col-lg-3 col-xs-3 text-center">
 							<a href="https://github.com/adrianaVN" target="_blank"><img src="images/github-draw-logo.png" alt="" class="contacts">
-							<h4 class="texto2 text-bl text-c"><b>github.com/adrianaVN</b></h4>
+							<h4 class="texto2 text-bl"><b>github.com/adrianaVN</b></h4>
 							</a>
 						</div>
 					</div>
@@ -196,8 +234,6 @@
 		
 		<script type="text/javascript" src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js></script>
 		<script type="text/javascript" src="js/main.js"></script>
-		<script type="text/javascript" src="js/waterbubble.min.js"></script>
-		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 		<script src="js/jquery-1.11.3.min.js"></script>
 	    <script src="js/bootstrap.min.js"></script>	
 	</body>
