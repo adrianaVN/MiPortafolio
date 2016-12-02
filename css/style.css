@@ -16,6 +16,9 @@ body{
 	margin: auto;
 	overflow-x: hidden;
 }
+.barco{
+	width: 100%;
+}
 ul > li{
 	text-decoration: none;
 	list-style: none;
@@ -28,9 +31,10 @@ li>a{
 	/* background-color:rgba(187,203,218,0.84);  */
 	background-image: url(../images/4-light-samless-denim.jpg);
 	background-size: cover;
-	height:850px;
-	/* margin-top: 40%; */
+	height:880px;
+	margin-top: 2%;
 	opacity: 0.93;
+	padding: 3%;
 }
 
 .azul{
@@ -39,7 +43,6 @@ li>a{
 	background-repeat: no-repeat;
 	background-size: cover;
 	height:750px;
-	/* margin-top: 40%; */
 	opacity: 0.8;
 }
 .nube{
@@ -103,15 +106,16 @@ li>a{
 	background-image: url(../images/brick_texture4787.jpg);
 	opacity: 0.9;
 	background-size: cover;
-	height:750px;
-	/* margin-top: 45%; */
+	height:760px;
+	padding: 3%;
+	 
 }
 .contacto{
 	background-image: url(../images/paper-boats-origami-art-ultra-hd-wallpaper.jpg);
 	opacity: 0.87;
 	background-size: cover;
-	height:650px;
-	/* margin-top: 40%; */
+	height:700px;
+	 
 }
 .contacts:hover{
 	/* background-image: url(../images/a06c35b5e12ec74fc59bfaaa211b2f1d.jpg);
