@@ -1,27 +1,14 @@
 
-	/*function openNav() {
-	    document.getElementById("mySidenav").style.width = "200px";
-	}
-
-	function closeNav() {
-	    document.getElementById("mySidenav").style.width = "0";
-	}*/
 
 
-$(window).scroll(function() {
 
-    if ($(this).scrollTop() >90)
-     {
-        $('.olas').hide();
-     }
-    else
-     {
-      $('.olas').fadeIn();
-     }
- });
 //nav bar 
 
 $(document).ready(function() {
+
+  $('html, body').animate({
+          scrollTop: 0
+  }, 1);
 
   var active1 = false;
   var active2 = false;
@@ -44,20 +31,78 @@ $(document).ready(function() {
     active4 = !active4;
 
     });
-});
+    
+    var altoOlas = $('.olas').height();
+    var conOlas = true;
 
+    $(window).scroll(function() {
 
-$(function() {
+      if ($(this).scrollTop() >90) {
+        $('.olas').hide();
+        conOlas = false; 
+      } else {
+        $('.olas').fadeIn();
+        conOlas = true;
+      }
+    });
+
+    $(".btnMenu").click(function(e){
+
+      var el = $(e.target).closest("div");
+
+      if (!el) {
+       return;
+      }
+
+      var dataSection = el.data("section");
+      var name = "." + dataSection;
+      name = name.trim();
+      var div = $(name);
+      var altura = $(name).offset().top;
+ 
+      if (conOlas) {   
+        var margin = $(".rosa").css("margin-top")
+        margin = margin.replace("px","")
+        margin = Number(margin);
+        altura = $("#primera").height() + margin;
+      }
+
+      $('html, body').animate({
+          scrollTop: altura
+      }, 1000);
+      
+    });
+
+    /*
+
   $('a[href*="#"]:not([href="#"])').click(function() {
+    
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
+      console.log("Target: ", target);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      console.log(target);
+      
       if (target.length) {
+        //var offset = target.offset().top;
+        console.log(target);
+        var offset = target.postion().top;
+        if (!conOlas) {
+            console.log("Quitando ", altoOlas);
+           // offset = offset - altoOlas;
+        }
+        console.log(offset);
         $('html, body').animate({
-          scrollTop: target.offset().top - 550
+          scrollTop: offset
         }, 1000);
         return false;
       }
     }
+
   });
+
+  */
+
 });
+
+
